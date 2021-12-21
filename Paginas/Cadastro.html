@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Formulario </title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../JS/scripts.js">
+</head>
+
+
+<body>
+    <img src="../Imagens/Cadastro.png" height="100" width="900" >
+    <p><a href="../Paginas/Home.html"> <h2> Link página inicial da loja: </h2></a></p>
+    <p><a href="../index.html"> <h2> Login do cliente: </h2></a></p>
+
+    <h1> Criar seu cadastro</h1>
+    <h2>veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :) </h2>
+
+    <div class="grid tb">
+
+    <div class="filha1">
+    
+    <form>
+    <label> *Nome completo: </label> <input type="text" name="Name" placeholder="Ex: Nícolas Lombardi" size="40" maxlength="150"/>
+    <br><br>
+    <label>*Gênero:  </label> 
+    <input type="radio" id="Alternativa1" name="Alternativa" value="A"/> <label for="Alternativa1">Feminino</label>
+    <input type="radio" id="Alternativa2" name="Alternativa" value="B"/> <label for="Alternativa2">Masculino</label>
+    <input type="radio" id="Alternativa3" name="Alternativa" value="C"/> <label for="Alternativa3">Não informar</label>
+    <br><br>
+    <label>*Data de nascimento: </label> <input type="date" name="data_cadastro"/>
+    <br><br>
+    <label> E-mail: </label> <input type="text" name="E-mail" placeholder="Digite o email:" size="40" maxlength="150"/>
+    <br><br>
+    <label> Senha de autorização: </label> <input type="password" name="Senha"/>
+    <br><br>
+    <label> Data e hora: </label> <input type="password" name="Senha"/>
+    <br><br>
+    <label> Telefone: </label> <input type="tel" name="Telefone" size="20"/>
+    <br><br>
+    <label> Tipo de Endereço </label>
+    <select name="tp_endereco" id="tp_endereco">
+    <option value="AC">Casa</option>
+    <option value="AC">Prédio</option>
+    <option value="AC">Comercio</option>
+    <option value="AC">Nenhum das Opções</option>
+    </select>
+    <br><br>
+    <button onclick= "go()"> Cadastrar </button>    
+    <p id="demo"></p>     <script type="text/javascript" src="../JS/scripts.js"></script>
+    </form>
